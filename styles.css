@@ -1,0 +1,276 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  overflow: auto;
+}
+
+p {
+  margin: 15px;
+  line-height: 25px;
+  letter-spacing: medium;
+}
+
+h3,
+h2 {
+  color: #fcfbfb;
+}
+
+.form-section {
+  width: 90%;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(12, 8, 8, 0.1);
+}
+
+.resume-preview {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(12, 8, 8, 0.1);
+  overflow: auto;
+}
+
+form label {
+  display: block;
+  color: #eee;
+  margin-top: 10px;
+}
+
+input::placeholder {
+  color: #313131;
+}
+textarea::placeholder {
+  color: #313131;
+}
+
+form input,
+form textarea {
+  width: 90%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  overflow: auto;
+  border-radius: 5px;
+  border: 1px solid #5c6369;
+  background-color: #9ea1a1;
+}
+
+.preview-head {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  color: white;
+  background-color: #0088ff;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1d1c1c;
+}
+
+.download-button,
+.share-button,
+.edit-button,
+.save-button,
+.back-to-form-button {
+  margin: 8px;
+}
+
+.resume-container {
+  display: flex;
+  background-color: #fbffff;
+  padding: 15px;
+  overflow: auto;
+  width: 793.701 px;
+  height: 1122.52 px;
+}
+
+.aside {
+  background-color: #000000;
+  color: white;
+  border: none;
+  margin-right: 10px;
+}
+
+.aside-h4 {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+h4 {
+  display: flex;
+  color: #eee;
+  justify-content: center;
+  padding: 5px;
+  margin: 5px;
+  width: 80%;
+  background-color: #000000;
+}
+
+h3:hover,
+h4:hover {
+  text-transform: uppercase;
+}
+
+ul {
+  color: white;
+}
+
+ul li {
+  list-style-type: disc;
+  margin: 5px;
+  padding: 8px;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+
+#preview-name {
+  display: flex;
+  color: #000000;
+  justify-content: left;
+  text-transform: uppercase;
+  font-size: xxx-large;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#profile-picture {
+  margin: 15px;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.form-head {
+  display: flex;
+  justify-content: space-between;
+}
+
+#upload-image {
+  width: 20%;
+  padding: 10px 10px;
+  margin-top: 15px;
+  height: 100%;
+  background-color: #5c6369;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#add-education-button,
+#add-experience-button,
+.remove-education-button,
+.remove-experience-button,
+.back-to-form-button {
+  margin-top: 10px;
+  display: inline-block;
+}
+
+.remove-education-button,
+.remove-experience-button {
+  background-color: #dc143c;
+}
+
+.remove-education-button:hover,
+.remove-experience-button:hover {
+  background-color: #800020;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 1200px) {
+  .container {
+    width: 95%;
+  }
+
+  .resume-container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .form-section,
+  .resume-preview {
+    width: 90%;
+  }
+
+  .preview-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 90%;
+    margin: 5px 0;
+  }
+
+  #upload-image {
+    width: 90%;
+  }
+
+  .aside,
+  .main {
+    flex-direction: column;
+    margin-right: 2px;
+  }
+
+  #preview-name {
+    font-size: large;
+    justify-content: center;
+  }
+
+  .resume-container {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  h3,
+  h4 {
+    font-size: medium;
+  }
+
+  #profile-picture {
+    max-width: 100px;
+  }
+
+  ul li {
+    font-size: small;
+    padding: 5px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  .preview-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
